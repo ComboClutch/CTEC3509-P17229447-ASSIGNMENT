@@ -1,50 +1,81 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+@import
+url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900');
 
 * {
   box-sizing: border-box;
+  transition: all ease-in-out 250ms;
 }
 
 body {
-	margin: 0;
-	font-family: 'Raleway', sans-serif;
-	text-align: center;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
 }
 
+ header img {
+  height: 200px;
+  width: 200px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .container {
-	width: 95%;
-	max-width: 70em;
-	margin: 0 auto;
+  width: 95%;
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+.clearfix::after,
+section::after,
+footer::after {
+	content: '';
+	display: block;
+	clear: both;
 }
 
 
-/* buttons */
+/* Column system
+======================*/
 
-.button {
-  display: inline-block;
-  font-size: 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-width: 2px;
-  border-style: solid;
-  padding: .5em 1em;
+[class^=col-] {
+	width: 100%;
+	margin-top: 1em;
 }
 
-.button-small {
-  font-size: .7rem;
-  font-weight: 600;
+[class^=col-]:first-child {
+	margin-top: 0;
 }
 
-.button-accent {
-  color: #0080FF;
-  border-color: #0080FF;
+.col-1 {
+	width: 33.333334%;
+	float: left;
 }
 
-.button-accent:hover,
-.button-accent:focus {
-  background: #0080FF;
-  color: #FFF;
-}
+
+@media (min-width: 40rem) {
+
+	[class^=col-] {
+		float: left;
+		padding: 0 .5em;
+		margin-top: 0;
+	}
+
+	[class^=col-]:first-child {
+		padding-left: 0;
+	}
+
+	[class^=col-]:last-child {
+		padding-right: 0;
+	}
+
+	.col-1 {
+		width: 16.6666%;
+	}
+
+
 
 
 /* typography
@@ -70,6 +101,16 @@ h1 {
   font-size: .9em;
 }
 
+.title-cta {
+  margin-top:  .5em;
+}
+
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 @media (min-width:60rem) {
 
    p {
@@ -84,39 +125,85 @@ h1 {
 }
 
 
+/* buttons */
+
+.button {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1em;
+}
+
+@media (min-width: 60rem) {
+  .button {
+    font-size: 1.75rem;
+  }
+}
+
+.button-small {
+  font-size: .7rem;
+  font-weight: 600;
+}
+
+.button-accent {
+  color: #0080FF;
+  border-color: #0080FF;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+  background: #0080FF;
+  color: #FFF;
+}
+
+.button-dark {
+  color: #232323;
+  border-color: #232323;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+  background: #232323;
+  color: #0080FF;
+}
+
+
 /* header
-=================== */
+=========================*/
 
 header {
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin: 1em;
+ position: absolute;
+ left: 0;
+ right: 0;
+ margin: 1em;
 }
 
 nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav li {
-	display: inline-block;
-	margin: 1em;
+  display: inline-block;
+  margin: 1em;
 }
 
 nav a {
-	font-weight: 900;
-	text-decoration: none;
-	padding: .5em;
-	text-transform: uppercase;
-	color: white;
-	font-size: .8rem;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .73rem;
+  padding: .3em;
+  color: black;
 }
 
 nav a:hover,
 nav a:focus {
-	color: #ddd;
+  color: #DDD;
 }
 
 @media (min-width:60rem) {
@@ -124,9 +211,9 @@ nav a:focus {
     float: left;
   }
 
-	nav {
-		float: right;
-	}
+  .nav {
+    float: right;
+  }
 }
 
 /* home hero
@@ -211,6 +298,7 @@ nav a:focus {
 
 }
 
+
 /* Portfolio images
 ===================== */
 
@@ -262,4 +350,22 @@ nav a:focus {
 	.vehicle-portfolio-item:hover .vehicle-portfolio-description {
 		transform: translateY(0%);
 	}
+}
+
+/* CTA
+===================== */
+
+.cta {
+  background-color: #0080FF;
+  padding: 5em 0;
+}
+
+/* footer
+================== */
+
+footer {
+  background: #232323;
+  color: #fff;
+  text-align: left;
+  padding: 5em 0;
 }
