@@ -18,6 +18,34 @@ body {
 }
 
 
+/* buttons */
+
+.button {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1em;
+}
+
+.button-small {
+  font-size: .7rem;
+  font-weight: 600;
+}
+
+.button-accent {
+  color: #0080FF;
+  border-color: #0080FF;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+  background: #0080FF;
+  color: #FFF;
+}
+
 /* typography
 =========================*/
 
