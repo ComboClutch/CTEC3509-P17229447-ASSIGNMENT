@@ -145,3 +145,68 @@ nav a:focus {
     padding-top: 35vh;
   }
 }
+
+/* hero-home
+=============================== */
+
+.home-about-textbox {
+  background-color: #232323;
+  padding: 4em;
+  width: 100vw;
+  margin-left: -2.5%;
+  outline: 2px solid #0080FF;
+  outline-offset: -2.5em;
+  color: #FFF;
+  position: relative;
+}
+
+.home-about-textbox h1 {
+  color: #0080FF;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: .5em;
+  background: #232323;
+  padding: 0 .25em;
+}
+
+@media (min-width: 25rem) {
+	h1 {
+		font-size: 2rem;
+  }
+
+.home-about-textbox h1 {
+  top: .6em;
+  padding: 0 .3em;
+ }
+}
+
+@media (min-width: 60rem) {
+	h1 {
+		font-size: 2.5rem;
+  }
+
+.home-about {
+  background-image: url(who-we-are.jpg);
+  background-repeat: no-repeat;
+  padding: 5em;
+  padding-bottom: 10em;
+}
+
+.home-about-textbox {
+    width: 45%;
+    padding: 4em;
+    margin-left: -2.5%;
+    top: -10em;
+    text-align: left;
+    box-shadow: 0 0 3em 0 rgba(0, 0, 0, .3);
+}
+
+.home-about-textbox h1 {
+  top: .3em;
+  left: 3.25rem;
+  transform: translateX(0);
+
+ }
+
+}
