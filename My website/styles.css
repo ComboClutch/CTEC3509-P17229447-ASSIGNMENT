@@ -56,3 +56,13 @@ nav a:focus {
 		float: right;
 	}
 }
+
+/* home hero
+==================== */
+.home-hero {
+  background-image: url(her-bg-pic.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 12em 0;
+  color: black;
+}
