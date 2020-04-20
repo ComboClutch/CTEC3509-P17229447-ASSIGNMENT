@@ -210,3 +210,56 @@ nav a:focus {
  }
 
 }
+
+/* Portfolio images
+===================== */
+
+.Vehicle-Portfolio {
+	margin: 3em 0 0;
+}
+
+.vehicle-portfolio-item {
+	margin: 0;
+	position: relative;
+}
+
+.vehicle-portfolio-item img {
+	display: block;
+}
+
+.vehicle-portfolio-description {
+	position: absolute;
+	z-index: 100;
+	bottom: 0em;
+	left: 0em;
+	right: 0em;
+	color: white;
+	background: rgba(0,0,0,.6);
+	padding-bottom: 2em;
+}
+
+.vehicle-portfolio-description p {
+	margin: 1em;
+}
+
+@media (min-width: 37rem) {
+	.vehicle-portfolio-item {
+		width: 50%;
+		float: left;
+	}
+}
+
+@media (min-width: 60rem) {
+	.vehicle-portfolio-item {
+		width: 33.3333334%;
+		overflow: hidden;
+	}
+
+	.vehicle-portfolio-description {
+		transform: translateY(150%);
+	}
+
+	.vehicle-portfolio-item:hover .vehicle-portfolio-description {
+		transform: translateY(0%);
+	}
+}
