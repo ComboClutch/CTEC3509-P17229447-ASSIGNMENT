@@ -198,12 +198,12 @@ nav a {
   text-transform: uppercase;
   font-size: .73rem;
   padding: .3em;
-  color: black;
+  color: #0080FF;
 }
 
 nav a:hover,
 nav a:focus {
-  color: #DDD;
+  color: #FFF;
 }
 
 @media (min-width:60rem) {
@@ -219,7 +219,7 @@ nav a:focus {
 /* home hero
 ==================== */
 .home-hero {
-  background-image: url(her-bg-pic.jpg);
+  background-image: url(images/vw-bg-pic.jpg);
   background-size: cover;
   background-position: center;
   padding: 12em 0;
@@ -274,7 +274,7 @@ nav a:focus {
   }
 
 .home-about {
-  background-image: url(who-we-are.jpg);
+  background-image: url(images/who-we-are.jpg);
   background-repeat: no-repeat;
   padding: 5em;
   padding-bottom: 10em;
