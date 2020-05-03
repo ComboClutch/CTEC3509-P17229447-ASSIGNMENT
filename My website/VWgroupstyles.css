@@ -14,22 +14,28 @@ header img {
 
 
 img {
-	max-width: 70%;
+	max-width: 100%;
 	height: auto;
+}
+
+.container {
+	width: 95%
+	margin: 0 auto;
 }
 
 /* typography
 ===================== */
-h2 {
-	font-weight: 300;
-	font-size: 1.7rem;
-	margin-top: 0;
+
+.title {
+	padding-top: 2em;
+	font-size: 2.5rem;
+	margin-bottom: 2em;
+	font-weight: 900;
+	margin-top: 1em;
+	color: #FFF;
+	outline: inherit;
 }
 
-p {
-	margin-top: 0;
-	line-height: 1.5;
-}
 
 
 
@@ -41,7 +47,7 @@ header {
 	position: absolute;
 	left: 0;
 	right: 0;
-	margin: 1em;
+	margin: 0em;
 }
 
 nav ul {
@@ -52,7 +58,7 @@ nav ul {
 
 nav li {
 	display: inline-block;
-	margin: 1em;
+	margin: 0em;
 }
 
 nav a {
@@ -79,19 +85,10 @@ nav a:focus {
 	}
 }
 
+/* home-hero
+=============== */
 
-/* History Portfolio
-======================*/
-.vehicle-portfolio-item img {
-  object-fit: contain;
-}
-
-
-
-
-.vehicle-portfolio-item {
-  border: 3px solid blue;
-  padding: 20px 40px 40px;
-  max-width: 640px;
-  display: flex;
+.home-hero {
+	background-image: url(images/Lambo-bg.jpg);
+	padding: 10em 0;
 }
