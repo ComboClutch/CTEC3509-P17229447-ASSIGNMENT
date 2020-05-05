@@ -84,6 +84,40 @@ figure img {
 	background-color: #565656;
 }
 
+.vehicle-portfolio-text-3 h2{
+	color: #326d95;
+}
+
+.vehicle-portfolio-text-3 {
+	outline: 2px solid #326d95;
+	outline-offset: -1em;
+	padding: 2em;
+	background-color: #565656;
+}
+
+.vehicle-portfolio-text-4 h2{
+	color: #070b0c;
+}
+
+.vehicle-portfolio-text-4 {
+	outline: 2px solid #070b0c;
+	outline-offset: -1em;
+	padding: 2em;
+	background-color: #565656;
+}
+
+.vehicle-portfolio-text-5 h2{
+	color: #0287cc;
+}
+
+.vehicle-portfolio-text-5 {
+	outline: 2px solid #0287cc;
+	outline-offset: -1em;
+	padding: 2em;
+	background-color: #565656;
+}
+
+
 	@media (min-width: 60rem) {
 	.Vehicle-Portfolio h1 {
 			font-size: 3rem;
