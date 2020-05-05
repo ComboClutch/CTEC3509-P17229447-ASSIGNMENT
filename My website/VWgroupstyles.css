@@ -13,8 +13,8 @@ header img {
 }
 
 
-img {
-	max-width: 100%;
+figure img {
+	max-width: 50%;
 	height: auto;
 }
 
@@ -25,6 +25,18 @@ img {
 
 /* typography
 ===================== */
+
+.Vehicle-Portfolio h1 {
+		font-weight: 700;
+		font-size: 1.2rem;
+		color: #0080FF;
+		margin-top: 0;
+	  padding: 1.5em;
+		background-color: #6767;
+		outline: 2px solid #0080FF;
+		outline-offset: -0.7em;
+	}
+
 
 .title {
 	padding-top: 2em;
@@ -40,6 +52,9 @@ img {
 	.title {
 		font-size: 3.7rem;
 	}
+	.Vehicle-Portfolio h1 {
+		font-size: 3rem;
+	}
 }
 
 /* buttons */
@@ -54,11 +69,6 @@ img {
 	padding: .5em 1.75em;
 }
 
-@media (min-width: 60rem) {
-	.button {
-		font-size: 1.5rem;
-	}
-}
 
 .button-accent {
 	color: #0080FF;
@@ -71,6 +81,11 @@ img {
 	color: #232323;
 }
 
+@media (min-width: 60rem) {
+	.button {
+		font-size: 1.5rem;
+	}
+}
 
 /* header
 =================== */
@@ -125,4 +140,28 @@ nav a:focus {
 	background-size: cover;
 	background-position: center;
 	padding: 10em 0;
+}
+
+@media (min-width: 60rem) {
+	.home-hero {
+		height: 100vh;
+		padding-top: 35vh;
+	}
+}
+
+/* hero-home
+============= */
+
+/* hero-home
+=================== */
+
+.home-about-textbox {
+	background-color: #232323;
+	padding: 4em;
+	width: 100vw;
+	margin-left: -2.5%;
+	outline: 2px solid #0080FF;
+	outline-offset: -2.5em;
+	color: #FFF;
+	position: relative;
 }
