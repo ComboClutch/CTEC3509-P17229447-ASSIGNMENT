@@ -19,8 +19,71 @@ figure img {
 }
 
 .container {
-	width: 95%
+	width: 95%;
+	max-width: 70em;
 	margin: 0 auto;
+}
+
+.clearfix::after,
+section::after,
+footer::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+/* Column system
+=================== */
+
+[class^=col-] {
+	width: 100%;
+	margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+	margin-top: 0;
+}
+
+.col-1 {
+	width: 33.333334%;
+	float: left;
+}
+
+
+@media (min-width: 40rem) {
+
+	[class^=col-] {
+		float: left;
+		padding: 0 .5em;
+		margin-top: 0;
+	}
+
+	[class^=col-]:first-child {
+		padding-left: 0;
+	}
+
+	[class^=col-]:last-child {
+		padding-right: 0;
+	}
+
+	.col-3 {
+		width: 50%;
+	}
+
+	.col-1 {
+		width: 17%;
+	}
+}
+
+@media (min-width: 60rem) {
+	.col-3 p {
+		font-size: 1.4rem;
+	}
+
+	.col-1 li {
+		font-size: 1.4rem;
+	}
 }
 
 /* typography
@@ -32,7 +95,7 @@ figure img {
 	margin-bottom: 2em;
 	font-weight: 900;
 	margin-top: 1em;
-	color: #0080FF;
+	color: #FFF;
 	outline: inherit;
 }
 
@@ -165,6 +228,17 @@ figure img {
 	color: #232323;
 }
 
+.button-dark {
+	color: #232323;
+	border-color: #232323;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+	background: #232323;
+	color: #0080FF;
+}
+
 @media (min-width: 60rem) {
 	.button {
 		font-size: 1.5rem;
@@ -247,4 +321,24 @@ figure {
 
 .vehicle-portfolio-item img {
 display: block;
+
+}
+
+/* CTA
+=================== */
+
+.cta {
+	background-color: #0080FF;
+	padding: 3em 0;
+	color: #fff;
+}
+
+/* Footer
+=================== */
+
+footer {
+	background: #232323;
+	color: #fff;
+	text-align: left;
+	padding: 5em 0;
 }
