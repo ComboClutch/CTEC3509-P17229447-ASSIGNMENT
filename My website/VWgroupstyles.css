@@ -58,6 +58,11 @@ figure img {
 		outline-offset: -0.7em;
 	}
 
+	.Vehicle-Portfolio h2{
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
 .vehicle-portfolio-text h2{
 	color: #FAFA37;
 }
@@ -117,10 +122,21 @@ figure img {
 	background-color: #565656;
 }
 
+@media (min-width: 45rem) {
+.Vehicle-Portfolio h1 {
+		font-size: 3rem;
+	}
+	.Vehicle-Portfolio h2{
+		font-size: 3rem;
+	}
+	.Vehicle-Portfolio p{
+		font-size: 1.4rem;
+	}
+}
 
 	@media (min-width: 60rem) {
 	.Vehicle-Portfolio h1 {
-			font-size: 3rem;
+			font-size: 4rem;
 		}
 	}
 
