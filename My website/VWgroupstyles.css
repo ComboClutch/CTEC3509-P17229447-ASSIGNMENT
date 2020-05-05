@@ -14,7 +14,7 @@ header img {
 
 
 figure img {
-	max-width: 50%;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -25,18 +25,6 @@ figure img {
 
 /* typography
 ===================== */
-
-.Vehicle-Portfolio h1 {
-		font-weight: 700;
-		font-size: 1.2rem;
-		color: #0080FF;
-		margin-top: 0;
-	  padding: 1.5em;
-		background-color: #6767;
-		outline: 2px solid #0080FF;
-		outline-offset: -0.7em;
-	}
-
 
 .title {
 	padding-top: 2em;
@@ -52,10 +40,56 @@ figure img {
 	.title {
 		font-size: 3.7rem;
 	}
-	.Vehicle-Portfolio h1 {
-		font-size: 3rem;
-	}
 }
+
+
+/* Vehicle Portfolio typography
+================================ */
+
+.Vehicle-Portfolio h1 {
+		font-weight: 700;
+		font-size: 1.2rem;
+		color: #0080FF;
+		margin-top: 0;
+		margin-bottom: 0;
+	  padding: 1.5em;
+		background-color: #565656;
+		outline: 2px solid #0080FF;
+		outline-offset: -0.7em;
+	}
+
+.vehicle-portfolio-text h2{
+	color: #FAFA37;
+}
+
+.Vehicle-Portfolio p {
+ color: #FFF;
+}
+
+.vehicle-portfolio-text {
+	outline: 2px solid #FAFA37;
+	outline-offset: -1em;
+	padding: 2em;
+	background-color: #565656;
+}
+
+.vehicle-portfolio-text-2 h2{
+	color: #D5D5D7;
+}
+
+.vehicle-portfolio-text-2 {
+	outline: 2px solid #D5D5D7;
+	outline-offset: -1em;
+	padding: 2em;
+	background-color: #565656;
+}
+
+	@media (min-width: 60rem) {
+	.Vehicle-Portfolio h1 {
+			font-size: 3rem;
+		}
+	}
+
 
 /* buttons */
 
@@ -149,19 +183,18 @@ nav a:focus {
 	}
 }
 
-/* hero-home
-============= */
+/* Portfolio
+==================== */
 
-/* hero-home
-=================== */
+figure {
+	margin: 0;
+}
 
-.home-about-textbox {
-	background-color: #232323;
-	padding: 4em;
-	width: 100vw;
-	margin-left: -2.5%;
-	outline: 2px solid #0080FF;
-	outline-offset: -2.5em;
-	color: #FFF;
+
+.vehicle-portfolio-item {
 	position: relative;
+}
+
+.vehicle-portfolio-item img {
+display: block;
 }
