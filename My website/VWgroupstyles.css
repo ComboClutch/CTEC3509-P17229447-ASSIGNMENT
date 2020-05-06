@@ -259,7 +259,7 @@ header {
 	position: absolute;
 	left: 0;
 	right: 0;
-	margin: 0em;
+	margin: 1em;
 }
 
 nav ul {
@@ -270,7 +270,7 @@ nav ul {
 
 nav li {
 	display: inline-block;
-	margin: 0em;
+	margin: 1em;
 }
 
 nav a {
