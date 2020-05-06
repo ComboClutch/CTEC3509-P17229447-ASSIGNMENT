@@ -79,7 +79,15 @@ footer::after {
 	}
 }
 
+@media (min-width: 60rem) {
+	.col-3 p {
+		font-size: 1.4rem;
+	}
 
+	.col-1 li {
+		font-size: 1.4rem;
+	}
+}
 
 
 

@@ -88,6 +88,32 @@ footer::after {
 	margin: 0 0 .5em;
 }
 
+/* typography
+===================== */
+
+.title {
+	padding-top: 2em;
+	font-size: 2.5rem;
+	margin-bottom: 2em;
+	font-weight: 900;
+	margin-top: 1em;
+	color: #FFF;
+	outline: inherit;
+}
+
+
+.unstyled-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+@media (min-width: 60rem) {
+	.title {
+		font-size: 3.7rem;
+	}
+}
+
 
 /* buttons
 ============= */
@@ -249,7 +275,7 @@ nav a:focus {
 
 .cta {
 	background-color: #0080FF;
-	padding: 3em 0;
+	padding: 1em 0;
 	color: #fff;
 }
 

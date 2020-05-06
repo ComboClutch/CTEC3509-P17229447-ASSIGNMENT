@@ -6,12 +6,152 @@ body {
 	line-height: 1.75;
 	padding: 0;
 	margin: 0;
+	text-align: center;
 }
 
 header img {
 	width: 200px;
 	height: 200px;
 }
+
+.container {
+	width: 95%;
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+.clearfix::after,
+section::after,
+footer::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+/* Column system
+=================== */
+
+[class^=col-] {
+	width: 100%;
+	margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+	margin-top: 0;
+}
+
+.col-1 {
+	width: 33.333334%;
+	float: left;
+}
+
+
+@media (min-width: 40rem) {
+
+	[class^=col-] {
+		float: left;
+		padding: 0 .5em;
+		margin-top: 0;
+	}
+
+	[class^=col-]:first-child {
+		padding-left: 0;
+	}
+
+	[class^=col-]:last-child {
+		padding-right: 0;
+	}
+
+	.col-3 {
+		width: 50%;
+	}
+
+	.col-1 {
+		width: 17%;
+	}
+}
+
+@media (min-width: 60rem) {
+	.col-3 p {
+		font-size: 1.4rem;
+	}
+
+	.col-1 li {
+		font-size: 1.4rem;
+	}
+}
+
+
+/* typography
+===================== */
+
+.title {
+	padding-top: 2em;
+	font-size: 2.5rem;
+	margin-bottom: 2em;
+	font-weight: 900;
+	margin-top: 1em;
+	color: #FFF;
+	outline: inherit;
+}
+
+
+.unstyled-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+@media (min-width: 60rem) {
+	.title {
+		font-size: 3.7rem;
+	}
+}
+
+/* buttons */
+
+.button {
+	display: inline-block;
+	font-size: 1.15rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+	padding: .5em 1.75em;
+}
+
+
+.button-accent {
+	color: #0080FF;
+	border-color: #0080FF;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+	background: #0080FF;
+	color: #232323;
+}
+
+.button-dark {
+	color: #232323;
+	border-color: #232323;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+	background: #232323;
+	color: #0080FF;
+}
+
+@media (min-width: 60rem) {
+	.button {
+		font-size: 1.5rem;
+	}
+}
+
+/* header
+============== */
 
 header {
 	position: relative;
@@ -166,5 +306,21 @@ nav a:focus {
 	filter: grayscale(100%);
 }
 
-/* header
+/* CTA
 =================== */
+
+.cta {
+	background-color: #0080FF;
+	padding: 1em 0;
+}
+
+
+/* Footer
+=================== */
+
+footer {
+	background: #232323;
+	color: #fff;
+	text-align: left;
+	padding: 5em 0;
+}
