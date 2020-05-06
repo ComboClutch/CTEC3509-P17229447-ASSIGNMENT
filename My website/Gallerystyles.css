@@ -15,7 +15,7 @@ header img {
 }
 
 .container-f {
-	width: 950%;
+	width: 95%;
 	max-width: 70em;
 	margin: 0 auto;
 }
@@ -27,6 +27,7 @@ footer::after {
 	display: block;
 	clear: both;
 }
+
 
 /* Column system
 =================== */
@@ -81,12 +82,6 @@ footer::after {
 	}
 }
 
-/* typography
-============= */
-
-.title-cta {
-	margin: 0 0 .5em;
-}
 
 /* typography
 ===================== */
@@ -114,10 +109,6 @@ footer::after {
 	}
 }
 
-
-/* buttons
-============= */
-
 /* buttons */
 
 .button {
@@ -136,6 +127,11 @@ footer::after {
 	border-color: #0080FF;
 }
 
+.button-accent:hover,
+.button-accent:focus {
+	background: #0080FF;
+	color: #232323;
+}
 
 .button-dark {
 	color: #232323;
@@ -155,13 +151,15 @@ footer::after {
 }
 
 /* header
-=================== */
+============== */
 
 header {
 	position: relative;
+	background-color: #565656;
 	left: 0;
 	right: 0;
-	margin: 1em;
+	margin: 0em;
+
 }
 
 nav ul {
@@ -189,24 +187,16 @@ nav a:focus {
 	color: #ddd;
 }
 
-@media (min-width:60rem) {
-	.logo {
-		float: left;
-	}
-
-	nav {
-		float: right;
-	}
-}
-
 
 .container {
-  width: 1280px;
-  margin: 70px auto 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+	 width: 100%;
+	 margin: 70px auto;
+	 display: flex;
+	 flex-direction: row;
+	 flex-wrap: wrap;
+	 justify-content: center;
 }
+
 
 .container .box {
   position: relative;
@@ -274,14 +264,15 @@ nav a:focus {
 	line-height: 55px;
 
 }
+
 /* CTA
 =================== */
 
 .cta {
 	background-color: #0080FF;
 	padding: 1em 0;
-	color: #fff;
 }
+
 
 /* Footer
 =================== */
