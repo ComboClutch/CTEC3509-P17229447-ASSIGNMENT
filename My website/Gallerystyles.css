@@ -267,9 +267,13 @@ nav a:focus {
 
 .container .box .details .content p {
   margin: 10px 0 0;
-  padding: 0;
+  padding: 1;
 }
 
+.box li {
+	line-height: 55px;
+
+}
 /* CTA
 =================== */
 
