@@ -13,6 +13,46 @@ header img {
 	height: 200px;
 }
 
+header {
+	position: relative;
+	background-color: #565656;
+	left: 0;
+	right: 0;
+	margin: 0em;
+
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin: 1em;
+}
+
+nav a {
+	font-weight: 900;
+	text-decoration: none;
+	padding: .5em;
+	text-transform: uppercase;
+	color: #0080FF;
+	font-size: .8rem;
+}
+
+nav a:hover,
+nav a:focus {
+	color: #ddd;
+}
+
+
+
+/* timeline
+=============== */
+
+
 #timeline {
 	display: flex;
 	background-color: #0080FF;
@@ -125,3 +165,6 @@ header img {
 	transition: filter 0.5s ease;
 	filter: grayscale(100%);
 }
+
+/* header
+=================== */
